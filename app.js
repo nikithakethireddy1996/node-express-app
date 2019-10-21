@@ -26,7 +26,8 @@ app.get('/', function (req, res) {
     '/wish/yourname <br>' +
     '/hey-you/Dr.Rogers <br>' +
     '/fortune <br>' +
-    '/fancy/?first=Denise&last=Case <br>' +
+    '/fancy/?first=Nikitha&last=Kethireddy <br>' +
+    '/external-img <br>'+
     '<br> <br> </h3>' +
     'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
   )
@@ -43,9 +44,13 @@ app.get('/mega', (req, res) => {
   res.send('<h1 style="color:green">Hey World!</h1>')
 })
 
+app.get('/external-img', (req, res) => {
+  res.send('<img src="https://media.cntraveler.com/photos/59567c7160c43507940bd1b4/16:9/w_1440,c_limit/skagit-valley-washington-GettyImages-452543289.jpg"')
+})
+
 // or respond with JSON
 app.get('/respond', (req, res) => {
-  res.send('<h4>{"Name" : "Nikitha"}</h4>')
+  res.send('<h4 style="color:green">{"Name" : "Nikitha"}</h4>')
 })
 
 // :name indicates a parameter at this location in the URI
