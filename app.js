@@ -20,7 +20,7 @@ const port = process.env.PORT || config.get("port");
 app.get('/', function (req, res) {
   res.send('<h3 style="color:green">Welcome to the default page!  <br> <br>' +
     'Try going to different URIs by adding these at the end: <br> <br>' +
-    '/hey ya <br>' +
+    '/hey-ya <br>' +
     '/mega <br>' +
     '/respond <br>' +
     '/wish/yourname <br>' +
@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 
 // or use the new arrow function syntax
 // respond with text
-app.get('/hey ya', (req, res) => {
+app.get('/hey-ya', (req, res) => {
   res.send('<h4>Hii World!</h4>')
 })
 
@@ -97,13 +97,14 @@ app.use((req, res, next) => {
 app.listen(port, hostname, () => {
   console.log(`\n App listening at http://${hostname}:${port}/`)
   console.log(`\n Try going to different URIs:\n`)
-  console.log(`   Try /hey ya`)
+  console.log(`   Try /hey-ya`)
   console.log(`   Try /mega`)
   console.log(`   Try /resond`)
   console.log(`   Try /fortune`)
+  console.log(`   Try /external-img`)
   console.log(`   Try /wish/yourname`)
   console.log(`   Try /hey-you/Dr.Rogers`)
-  console.log(`   Try /fancy/?first=Denise&last=Case`)
+  console.log(`   Try /fancy/?first=Nikitha&last=Kethireddy`)
   console.log('\n Hit CTRL-C CTRL-C to stop\n')
 })
 
