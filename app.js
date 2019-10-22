@@ -45,7 +45,7 @@ app.get('/mega', (req, res) => {
 })
 
 app.get('/external-img', (req, res) => {
-  res.send('<img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2010/05/free_flowers_shutterstock_13325443_web.jpg"')
+  res.send('<img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2010/05/free_flowers_shutterstock_13325443_web.jpg">')
 })
 
 // or respond with JSON
