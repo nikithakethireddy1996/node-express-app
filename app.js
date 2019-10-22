@@ -18,7 +18,7 @@ const port = process.env.PORT || config.get("port");
 
 // declare your callback function the old way
 app.get('/', function (req, res) {
-  res.send('<h3 style="color:green">Welcome to the default page!  <br> <br>' +
+  res.send('<h3 style="color:pink">Welcome to the default page!  <br> <br>' +
     'Try going to different URIs by adding these at the end: <br> <br>' +
     '/hey-ya <br>' +
     '/mega <br>' +
@@ -41,7 +41,7 @@ app.get('/hey-ya', (req, res) => {
 
 // or respond with html
 app.get('/mega', (req, res) => {
-  res.send('<h1 style="color:purple">Hey World!</h1>')
+  res.send('<h1 style="color:majenda">Hey World!</h1>')
 })
 
 app.get('/external-img', (req, res) => {
@@ -50,7 +50,7 @@ app.get('/external-img', (req, res) => {
 
 // or respond with JSON
 app.get('/respond', (req, res) => {
-  res.send('<h4 style="color:purple">{"Name" : "Nikitha"}</h4>')
+  res.send('<h4 style="color:majenda">{"Name" : "Nikitha"}</h4>')
 })
 
 // :name indicates a parameter at this location in the URI
@@ -60,7 +60,7 @@ app.get('/wish/:id', (req, res) => {
 
 // combine your skills and get creative
 app.get('/hey-you/:buddy', (req, res) => {
-  res.send(`<h1 style="color:purple">Bojour!, ${req.params.buddy}!</h1>`)
+  res.send(`<h1 style="color:majenda">Bojour!, ${req.params.buddy}!</h1>`)
 })
 
 // provide multiple query parameters (named first and last) with ? and &
