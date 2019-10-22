@@ -63,12 +63,12 @@ node app.js
 Open a web browser. Try these URLs:
 
 1. <http://127.0.0.1:3002/> or <http://localhost:3002/>.
-1. <http://localhost:3002/hello>
-1. <http://localhost:3002/big>
-1. <http://localhost:3002/greeting/42>
-1. <http://localhost:3002/yo/Lohita>
-1. <http://localhost:3002/yo/Rahul>
-1. <http://localhost:3002/yo/Teja>
+1. <http://localhost:3002/hey-ya>
+1. <http://localhost:3002/mega>
+1. <http://localhost:3002/external-img>
+1. <http://localhost:3002/hey-you/Lohita>
+1. <http://localhost:3002/hey-you/Rahul>
+1. <http://localhost:3002/hey-you/Teja>
 1. <http://localhost:3002/fortune>
 
 ## Modify and Restart Your Node Server

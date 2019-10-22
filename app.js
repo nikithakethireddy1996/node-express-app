@@ -99,7 +99,7 @@ app.listen(port, hostname, () => {
   console.log(`\n Try going to different URIs:\n`)
   console.log(`   Try /hey-ya`)
   console.log(`   Try /mega`)
-  console.log(`   Try /resond`)
+  console.log(`   Try /respond`)
   console.log(`   Try /fortune`)
   console.log(`   Try /external-img`)
   console.log(`   Try /wish/yourname`)
