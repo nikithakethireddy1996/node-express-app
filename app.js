@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
     '/mega <br>' +
     '/respond <br>' +
     '/wish/yourname <br>' +
-    '/hey-you/Dr.Rogers <br>' +
+    '/hey-you/Nikitha <br>' +
     '/fortune <br>' +
     '/fancy/?first=Nikitha&last=Kethireddy <br>' +
     '/external-img <br>'+
@@ -41,7 +41,7 @@ app.get('/hey-ya', (req, res) => {
 
 // or respond with html
 app.get('/mega', (req, res) => {
-  res.send('<h1 style="color:green">Hey World!</h1>')
+  res.send('<h1 style="color:pink">Hey World!</h1>')
 })
 
 app.get('/external-img', (req, res) => {
@@ -50,7 +50,7 @@ app.get('/external-img', (req, res) => {
 
 // or respond with JSON
 app.get('/respond', (req, res) => {
-  res.send('<h4 style="color:green">{"Name" : "Nikitha"}</h4>')
+  res.send('<h4 style="color:pink">{"Name" : "Nikitha"}</h4>')
 })
 
 // :name indicates a parameter at this location in the URI
@@ -60,7 +60,7 @@ app.get('/wish/:id', (req, res) => {
 
 // combine your skills and get creative
 app.get('/hey-you/:buddy', (req, res) => {
-  res.send(`<h1 style="color:green">Bojour!, ${req.params.buddy}!</h1>`)
+  res.send(`<h1 style="color:pink">Bojour!, ${req.params.buddy}!</h1>`)
 })
 
 // provide multiple query parameters (named first and last) with ? and &
@@ -103,7 +103,7 @@ app.listen(port, hostname, () => {
   console.log(`   Try /fortune`)
   console.log(`   Try /external-img`)
   console.log(`   Try /wish/yourname`)
-  console.log(`   Try /hey-you/Dr.Rogers`)
+  console.log(`   Try /hey-you/Nikitha`)
   console.log(`   Try /fancy/?first=Nikitha&last=Kethireddy`)
   console.log('\n Hit CTRL-C CTRL-C to stop\n')
 })
